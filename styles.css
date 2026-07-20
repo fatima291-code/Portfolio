@@ -1493,10 +1493,18 @@ footer{
     }
 
     .nav-links{
-        display:flex;
-        flex-wrap:nowrap;
-        gap:15px;
-    }
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.nav-links::-webkit-scrollbar{
+    display:none;
+}
 
     .nav-links li{
         white-space:nowrap;
